@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.minguillo.ancajima.juanaapp.Inicio">
+
+    <RelativeLayout
+        android:id="@+id/relativePagerIni"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3C3F41"
+            android:id="@+id/linearLayout3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Diseñamos tu prenda perfecta!!"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:keepScreenOn="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true">
+            </ImageSwitcher>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_margin="15dp"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_juana_p_inicio"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_margin="0dp"
+                android:layout_height="60dp"
+                android:text="ENTRAR"
+                android:id="@+id/btnPIEntrar"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:textSize="15dp"
+                android:background="@drawable/estilo_boton_dark" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_margin="0dp"
+                android:layout_height="60dp"
+                android:text="REGISTRARTE"
+                android:id="@+id/btnRegistrarte"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_boton_green" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minguillo.ancajima.juanaapp.Registrarte">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Crear Cuenta"
+                android:textColor="#000000"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nombres"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_usuario"
+                android:drawablePadding="8dp"
+                style="@style/estilo_caja_texto"
+                android:background="@drawable/estilo_caja_texto_dark"
+                android:id="@+id/editTextPRNombres" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Apellidos"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_apellidos"
+                android:drawablePadding="8dp"
+                style="@style/estilo_caja_texto"
+                android:background="@drawable/estilo_caja_texto_dark"
+                android:id="@+id/editTextPRApellidos" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_correo"
+                android:drawablePadding="8dp"
+                android:hint="Correo electrónico"
+                android:id="@+id/editTextPREmail"
+                style="@style/estilo_caja_texto"
+                android:background="@drawable/estilo_caja_texto_dark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_ccorreo"
+                android:drawablePadding="8dp"
+                android:hint="Confirma Correo electrónico"
+                android:id="@+id/editTextPREmailConfirmar"
+                style="@style/estilo_caja_texto"
+                android:background="@drawable/estilo_caja_texto_dark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="8dp"
+                android:hint="Contraseña"
+                style="@style/estilo_caja_texto"
+                android:background="@drawable/estilo_caja_texto_dark"
+                android:id="@+id/editTextPRClave" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff"
+                android:text="Crear Cuenta"
+                android:id="@+id/btnRegistrarPR"
+                android:background="@drawable/estilo_boton_amarillo" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

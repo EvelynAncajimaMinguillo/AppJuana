@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_qsomos"
+            android:icon="@drawable/ic_qsomos"
+            android:title="¿Quiénes Somos?" />
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@drawable/ic_buscar"
+            android:title="Buscar" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_pedidos"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_historial_pedidos"
+            android:icon="@drawable/ic_historial"
+            android:title="Historial de Pedidos" />
+        <item
+            android:id="@+id/nav_cita"
+            android:icon="@drawable/ic_cita"
+            android:title="Obtener Cita" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_preguntas"
+                android:icon="@drawable/ic_preguntas"
+                android:title="Preguntas" />
+            <item
+                android:id="@+id/nav_calificanos"
+                android:icon="@drawable/ic_calificanos"
+                android:title="Califica nuestra App" />
+            <item
+                android:id="@+id/nav_configuracion"
+                android:icon="@drawable/ic_configuracion"
+                android:title="Configuración" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_salir"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>
